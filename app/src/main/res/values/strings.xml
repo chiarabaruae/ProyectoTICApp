@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MiApp</string>
+
+    <!-- MenuPincipal -->
+    <string name="Texto_insertar_nombre">Ingrese su nombre de usuario:</string>
+    <string name="texto_insertar_password">Ingrese su contrasena: </string>
+    <string name="Nombre_de_mi_app"><font size="10">Mi APP</font></string>
+    <string name="version_app">Version: 1.0</string>
+    <string name="Fecha_Lanzamiento_App">Fecha de lanzamiento: 29/10/21</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/azul_clarito">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="202dp"
+        android:layout_height="214dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="104dp"
+        app:srcCompat="@drawable/user" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="73dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="247dp"
+        android:layout_height="29dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="-40dp"
+        android:text="@string/Texto_insertar_nombre" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="243dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/editTextTextPersonName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="81dp"
+        android:text="@string/texto_insertar_password" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="247dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="77dp"
+        android:ems="10"
+        android:hint="@string/texto_insertar_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Ingresar"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumberPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="144dp"
+        android:onClick="validacion"
+        android:text="Ingresar"
+        android:name=".ToInformationActivity"
+        android:label="@string/app_name"
+        />
+
+</RelativeLayout>
