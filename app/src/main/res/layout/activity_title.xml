@@ -1,70 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Organise"
-    tools:context="com.example.miapp.MainActivity">
+    tools:context="com.example.miapp.MainActivity"
+    android:background="#FEF5ED">
 
-    <TextView
-        android:id="@+id/welcomeText1"
-        android:layout_width="394dp"
-        android:layout_height="67dp"
-        android:text="@string/title_page_welcome"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp" />
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="650dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:background="#ADC2A9">
 
-    <Button
-        android:id="@+id/all_task_button"
-        android:layout_width="157dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="25dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:onClick="onViewAllButtonClicked"
-        android:text="@string/full_task_list_redirect"
-        android:name=".ActivityLogObj"
-        app:layout_constraintBottom_toTopOf="@+id/log_task_button"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        <RelativeLayout
+            android:id="@+id/SeccionTituloPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorVerdeOscuro">
 
-    <Button
-        android:id="@+id/log_task_button"
-        android:layout_width="159dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="113dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:onClick="onSaveNewButtonClicked"
-        android:text="@string/log_task_redirect"
-        android:name=".ActivityList"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="50dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="10dp"
+                android:text="Bienvenido a Organizador!"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold">
 
-    <TextView
-        android:id="@+id/welcomeText2"
-        android:layout_width="0dp"
-        android:layout_height="83dp"
-        android:text="@string/title_page_welcome2"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="29dp"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeText1"
-        app:layout_constraintHorizontal_bias="0.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SeccEnc"
+            android:layout_width="396dp"
+            android:layout_height="567dp"
+            android:layout_below="@id/SeccionTituloPrincipal"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="#D3E4CD">
+
+            <RelativeLayout
+                android:layout_width="386dp"
+                android:layout_height="557dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:background="#FEF5ED">
+
+                <TextView
+                    android:id="@+id/textoBienvenida"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="30dp"
+                    android:text="Bienvenido a OrganizadorApp, tu app asistente de objetivos diarios"
+                    android:textSize="20dp"
+                    android:textStyle="italic">
+
+                </TextView>
+
+
+                <Button
+                    android:id="@+id/all_task_button"
+                    android:name=".ActivityLogObj"
+                    android:layout_width="157dp"
+                    android:layout_height="59dp"
+                    android:layout_above="@+id/log_task_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="115dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="43dp"
+                    android:background="@color/colorVerdeOscuro"
+                    android:onClick="onViewAllButtonClicked"
+                    android:text="@string/full_task_list_redirect" />
+
+                <Button
+                    android:id="@+id/log_task_button"
+                    android:name=".ActivityList"
+                    android:layout_width="159dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="115dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="199dp"
+                    android:background="@color/colorVerdeOscuro"
+                    android:onClick="onSaveNewButtonClicked"
+                    android:text="@string/log_task_redirect"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <Button
+                    android:id="@+id/BtnInfo"
+                    android:layout_width="159dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="115dp"
+                    android:layout_marginBottom="99dp"
+                    android:text="Mas Info.">
+
+                </Button>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

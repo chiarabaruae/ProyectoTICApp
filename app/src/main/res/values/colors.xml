@@ -5,4 +5,11 @@
     <color name="black">#FF000000</color>
     <color name="azul_clarito">#e3f2fd</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--Paleta de colores para la app-->
+    <color name="colorClarito">#FEF5ED</color>
+    <color name="colorVerdesito">#D3E4CD</color>
+    <color name="colorVerde">#ADC2A9</color>
+    <color name="colorVerdeOscuro">#ADC2A9</color>
+
 </resources>

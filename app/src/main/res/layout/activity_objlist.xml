@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.miapp.ActivityList">
 
-    <Button
-        android:id="@+id/add_button"
-        android:name="."
-        android:layout_width="116dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/new_task_title"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list"
-        app:layout_constraintVertical_bias="0.196"
-        tools:ignore="MissingConstraints" />
+    <RelativeLayout
+        android:id="@+id/SeccListadoObjetivos"
+        android:layout_width="420dp"
+        android:layout_height="60dp"
+        android:background="#9DA993">
 
-    <ListView
-        android:id="@+id/list"
-        android:layout_width="404dp"
-        android:layout_height="555dp"
-        android:hint="Listado de objetivos"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="5dp" />
+        <TextView
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:text="Listado de Tareas"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="420dp"
+        android:layout_height="550dp"
+        android:layout_below="@+id/SeccListadoObjetivos">
+
+        <ListView
+            android:id="@+id/listadoObjetivos"
+            android:layout_width="404dp"
+            android:layout_height="550dp"
+            android:layout_below="@id/SeccListadoObjetivos"
+            tools:ignore="MissingConstraints,NotSibling"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
