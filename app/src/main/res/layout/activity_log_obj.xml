@@ -1,107 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/log_new_task"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorClarito"
     tools:context="com.example.miapp.ActivityLogObj">
 
-    <EditText
-        android:id="@+id/new_task_title"
-        android:layout_width="0dp"
-        android:layout_height="61dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Titulo de objetivo"
-        android:inputType="textPersonName|textCapSentences|textAutoCorrect"
-        android:imeOptions="actionDone"
-        android:textAlignment="textStart"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="650dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:background="#ADC2A9">
 
-    <EditText
-        android:id="@+id/new_task_description"
-        android:layout_width="403dp"
-        android:layout_height="172dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:hint="Descripcion de objetivo"
-        android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
-        android:imeOptions="actionDone"
-        android:textAlignment="inherit"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/new_task_title" />
+        <RelativeLayout
+            android:id="@+id/TituloAgregarObj"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorVerdeOscuro">
 
-    <EditText
-        android:id="@+id/due_date"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="8dp"
-        android:ems="10"
-        android:hint="Due Date"
-        android:inputType="date"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:text="@string/task_detail_due_date"
-        android:layout_marginTop="37dp"
-        app:layout_constraintTop_toBottomOf="@+id/new_task_description"
-        app:layout_constraintRight_toLeftOf="@+id/date_button"
-        android:layout_marginRight="8dp"
-        app:layout_constraintHorizontal_bias="1.0" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="50dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="10dp"
+                android:text="Agregar Nuevo Objetivo"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold">
 
-    <Button
-        android:id="@+id/save_button"
-        android:layout_width="120dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="53dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/save_task_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+            </TextView>
 
-    <CheckBox
-        android:id="@+id/completeBox"
-        android:layout_width="393dp"
-        android:layout_height="59dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:duplicateParentState="false"
-        android:text="@string/task_complete_box"
-        android:textSize="20sp"
-        android:hint="Objetivo Completado?"
-        android:textColor="@color/black"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/save_button"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/due_date"
-        app:layout_constraintVertical_bias="0.247" />
+        </RelativeLayout>
 
-    <Button
-        android:id="@+id/date_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="37dp"
-        android:text="@string/launch_calendar_button"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/new_task_description" />
+        <RelativeLayout
+            android:id="@+id/SeccEnc"
+            android:layout_width="396dp"
+            android:layout_height="567dp"
+            android:layout_below="@id/TituloAgregarObj"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="#D3E4CD">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <RelativeLayout
+                android:id="@+id/parteclarita"
+                android:layout_width="386dp"
+                android:layout_height="557dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:background="#FEF5ED">
+
+                <TextView
+                    android:id="@+id/txtNombreObj"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Nombre del Objetivo:"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+
+                <EditText
+                    android:id="@+id/new_task_title"
+                    android:layout_width="365dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="5dp"
+                    android:ems="10"
+                    android:hint="Ingrese el titulo aqui..."
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName|textCapSentences|textAutoCorrect"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtIngreseDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/new_task_title"
+                    android:text="Ingrese la descripcion del objetivo"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+
+                <EditText
+                    android:id="@+id/new_task_description"
+                    android:layout_width="369dp"
+                    android:layout_height="86dp"
+                    android:layout_below="@id/txtIngreseDes"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:ems="10"
+                    android:hint="Descripcion de objetivo"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+                    android:textAlignment="inherit" />
+
+                <TextView
+                    android:id="@+id/txtFechaLim"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/new_task_description"
+                    android:text="Ingrese la fecha limite:"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+
+                <EditText
+                    android:id="@+id/due_date"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtFechaLim"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="182dp"
+                    android:layout_marginRight="8dp"
+                    android:ems="10"
+                    android:hint="Due Date"
+                    android:inputType="date"
+                    android:textSize="15dp"
+                    android:textStyle="italic"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="@string/task_detail_due_date" />
+
+
+                <Button
+                    android:id="@+id/date_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/due_date"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="-6dp"
+                    android:text="@string/launch_calendar_button"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/completeBox"
+                    android:layout_width="393dp"
+                    android:layout_height="59dp"
+                    android:layout_below="@id/date_button"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:duplicateParentState="false"
+                    android:hint="Objetivo Completado?"
+                    android:text="@string/task_complete_box"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:visibility="invisible"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintVertical_bias="0.247" />
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="120dp"
+                    android:layout_height="58dp"
+                    android:layout_below="@id/completeBox"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="125dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="53dp"
+                    android:text="@string/save_task_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

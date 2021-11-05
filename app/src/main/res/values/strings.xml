@@ -18,7 +18,7 @@
     <string name="task_priority_box">Objetivo de prioridad?</string>
     <string name="edit_task_detail_button1">Guardar</string>
     <string name="delete_task_detail_button">Eliminar Objetivo</string>
-    <string name="save_task_button">Guardar Objetivo</string>
+    <string name="save_task_button">Crear Objetivo</string>
     <string name="task_details_title">Detalle completo de Objetivo</string>
     <string name="new_task_title">Nuevo Ojbetivo</string>
     <string name="list_title">Lista de objetivo</string>

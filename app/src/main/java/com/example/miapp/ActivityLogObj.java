@@ -10,11 +10,15 @@ public class ActivityLogObj extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lis_item2);
+        setContentView(R.layout.activity_type_view);
 
     }
-    public void onClick(View button){
-        setContentView(R.layout.activity_log_obj);
+    public void onViewAllButtonClicked(View Button){
+        setContentView(R.layout.activity_lis_item2);
+    }
+
+    public void onSaveNewButtonClicked(View button){
+        setContentView(R.layout.activity_objlist);
     }
 
 }
