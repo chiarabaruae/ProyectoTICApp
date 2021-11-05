@@ -4,10 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/HP/AndroidStudioProjects/MiApp2/app/src/main/res/layout/activity_information.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MiApp2/app/src/main/res/layout/activity_list_item.xml" value="0.264" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MiApp2/app/src/main/res/layout/activity_listado_objetivos.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MiApp2/app/src/main/res/layout/activity_log_obj.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MiApp2/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MiApp2/app/src/main/res/layout/activity_menu_principal.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MiApp2/app/src/main/res/layout/activity_objective.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MiApp2/app/src/main/res/layout/activity_objlist.xml" value="0.264" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MiApp2/app/src/main/res/layout/activity_title.xml" value="0.264" />
       </map>
     </option>
   </component>

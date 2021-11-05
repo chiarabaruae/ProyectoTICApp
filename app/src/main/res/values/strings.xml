@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MiApp</string>
+    <string name="app_name">Organizador</string>
 
     <!-- MenuPincipal -->
     <string name="Texto_insertar_nombre">Ingrese su nombre de usuario:</string>
@@ -7,4 +7,27 @@
     <string name="Nombre_de_mi_app"><font size="10">Mi APP</font></string>
     <string name="version_app">Version: 1.0</string>
     <string name="Fecha_Lanzamiento_App">Fecha de lanzamiento: 29/10/21</string>
+
+    <string name="menu_title">Ingresa nuevo Objetivo</string>
+    <string name="title_page_welcome">Bienvenido al Organizador</string>
+    <string name="title_page_welcome2">Organizador de vida!, un objetivo a la vez</string>
+    <string name="task_detail_title">Programados</string>
+    <string name="task_detail_description">Describa el detalle del objetivo aqui...</string>
+    <string name="task_detail_due_date">due date</string>
+    <string name="task_complete_box">Objetivo completado?</string>
+    <string name="task_priority_box">Objetivo de prioridad?</string>
+    <string name="edit_task_detail_button1">Guardar</string>
+    <string name="delete_task_detail_button">Eliminar Objetivo</string>
+    <string name="save_task_button">Guardar Objetivo</string>
+    <string name="task_details_title">Detalle completo de Objetivo</string>
+    <string name="new_task_title">Nuevo Ojbetivo</string>
+    <string name="list_title">Lista de objetivo</string>
+    <string name="full_task_list_redirect">Mirar Objetivos</string>
+    <string name="log_task_redirect">Nuevos Objetivos</string>
+    <string name="complete_toggle">Completo? (imagen aqui?)</string>
+    <string name="menu">Agrega un nuevo objetivo</string>
+    <string name="launch_calendar_button">Calendario</string>
+    <string name="preference_file_key">Lista de Obj</string>
+    <string name="edit_task_title">Edit Objt</string>
+    <string name="due_date_title">Due Date:</string>
 </resources>

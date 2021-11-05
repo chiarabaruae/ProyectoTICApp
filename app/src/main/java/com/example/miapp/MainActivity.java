@@ -17,33 +17,21 @@ public class MainActivity extends AppCompatActivity {
     private Button Ingresar;
     private int cont = 0 ;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_title);
 
-    Name = (EditText) findViewById(R.id.editTextTextPersonName);
-    Password = (EditText) findViewById(R.id.editTextNumberPassword);
     }
 
-    public void validacion(View view){
-
-        Ingresar = (Button)findViewById(R.id.Ingresar);
-
-        String UserName = Name.getText().toString();
-        String UserPassword = Password.getText().toString();
-
-        if ((UserName.equals("user1") && UserPassword.equals("pass1"))) {
-            Intent i = new Intent(MainActivity.this, InformationActivity.class);
-            startActivity(i);
-        } else {
-            //desabilitar boton
-            cont--;
-            if(cont==0){
-               Ingresar.setEnabled(false);
-           }
-        }
+    public void onViewAllButtonClicked(View Button){
+        Intent intent = new Intent(this, ActivityLogObj.class);
+        startActivity(intent);
     }
+
+    public void onSaveNewButtonClicked(View button){
+        Intent intent = new Intent(this, ActivityList.class);
+        startActivity(intent);
     }
+}
 
