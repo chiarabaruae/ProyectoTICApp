@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void setView(View view){
+        setContentView(R.layout.activity_title);
+    }
+
     public void onViewAllButtonClicked(View Button){
         Intent intent = new Intent(this, ActivityLogObj.class);
         startActivity(intent);

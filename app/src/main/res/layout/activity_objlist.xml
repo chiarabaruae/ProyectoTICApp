@@ -21,6 +21,19 @@
             android:textSize="20dp"
             android:textStyle="bold"></TextView>
 
+        <ImageView
+            android:name=".ActivityLogObj"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="354dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="setTypeView"
+            android:src="@drawable/returnicon"></ImageView>
+
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="420dp"
