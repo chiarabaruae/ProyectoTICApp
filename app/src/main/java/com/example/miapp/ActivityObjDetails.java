@@ -30,6 +30,7 @@ public class ActivityObjDetails extends AppCompatActivity{
         complete.setChecked(obj.getComplete());
     }
 
+    //funciones de editar info de obj
     public void onEditButton(View view){
         String tituloString = titulo.getText().toString();
         String descripcionString = descripcion.getText().toString();

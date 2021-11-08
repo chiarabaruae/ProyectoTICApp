@@ -37,5 +37,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ActivityList.class);
         startActivity(intent);
     }
+
+    public void onSetInfoButton(View button){
+        setContentView(R.layout.activity_info);
+    }
 }
 

@@ -49,6 +49,7 @@ public class ActivityList extends AppCompatActivity implements View.OnClickListe
         botonElegirFecha.setOnClickListener(this);
     }
 
+    //Recopilar informacion
     @Override
     public void onClick(View button) {
         if (button == botonElegirFecha){
@@ -59,14 +60,27 @@ public class ActivityList extends AppCompatActivity implements View.OnClickListe
 
             DatePickerDialog dialogoDeDate = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
-                public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                    {
-                        @Override
-                                public void on
-                    }
+                public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                        dateTexto.setText(dayOfMonth + "-" + (monthOfYear + 1 )+ "-" + year);
                 }
-            })
+            }, anho, mes, dia);
+            dialogoDeDate.show();
         }
+    }
+
+    //Guardar informacion
+    public void saveOnClick(View view){
+        String nuevoTitulo = nuevoTituloTexto.getText().toString();
+        String nuevaDescrip = nuevaDescripTexto.getText().toString();
+        String nuevoDueDate = dateTexto.getText().toString();
+        boolean nuevoComplete = completeBox.isChecked();
+
+        Obj nuevoObj = new Obj(nuevoTitulo, nuevaDescrip, nuevoDueDate, nuevoComplete);
+
+        Intent intent = new Intent(this, ActivityLogObj.class);
+        intent.putExtra("nuevoObj", nuevoObj);
+        Toast.makeText(this,"Nuevo Objetivo guardado!", Toast.LENGTH_SHORT).show();
+        startActivity(intent);
     }
 
     // visualizacion de la pantalla para el botón de "Return"
@@ -74,7 +88,5 @@ public class ActivityList extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_type_view);
     }
 
-    // tener un arrayList
-    TypeToken<ArrayList<Obj>> objArrayList = new TypeToken<ArrayList<Obj>>(){};
 
 }
