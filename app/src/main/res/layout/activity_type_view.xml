@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    android:background="@color/colorVerdeOscuro">
+
+    <RelativeLayout
+        android:id="@+id/TituloTipoVista"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorVerdeOscuro">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="50dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="10dp"
+            android:text="Mirar Objetivos..."
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/SeccEnc"
+        android:layout_width="396dp"
+        android:layout_height="567dp"
+        android:layout_below="@id/TituloTipoVista"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        android:background="#D3E4CD">
+
+        <RelativeLayout
+            android:id="@+id/parteclarita"
+            android:layout_width="383dp"
+            android:layout_height="642dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="#FEF5ED">
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="101dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="134dp"
+                android:layout_marginBottom="393dp"
+                android:src="@drawable/ojito"
+                ></ImageView>
+
+            <Button
+                android:id="@+id/BtnOrdenPrioridad"
+                android:name=".ActivityLogOvj"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="120dp"
+                android:layout_marginBottom="186dp"
+                android:onClick="setViewListObjs"
+                android:text="Por orden de prioridad">
+
+            </Button>
+
+            <Button
+                android:name=".ActivityLogObj"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/BtnOrdenPrioridad"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="119dp"
+                android:layout_marginBottom="25dp"
+                android:onClick="setViewObjList"
+                android:text="En Total"></Button>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

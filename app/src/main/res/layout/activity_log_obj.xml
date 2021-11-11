@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorClarito"
-    tools:context="com.example.miapp.ActivityLogObj">
+    tools:context="com.example.miapp.ActivityList">
 
     <RelativeLayout
         android:layout_width="410dp"
@@ -33,6 +33,7 @@
                 android:textStyle="bold">
 
             </TextView>
+
 
         </RelativeLayout>
 
@@ -157,7 +158,6 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
                     android:duplicateParentState="false"
-                    android:hint="Objetivo Completado?"
                     android:text="@string/task_complete_box"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -169,6 +169,7 @@
 
                 <Button
                     android:id="@+id/save_button"
+                    android:name=".ActivityList"
                     android:layout_width="120dp"
                     android:layout_height="58dp"
                     android:layout_below="@id/completeBox"
@@ -178,6 +179,7 @@
                     android:layout_marginEnd="125dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="53dp"
+                    android:onClick="saveOnClick"
                     android:text="@string/save_task_button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.498"

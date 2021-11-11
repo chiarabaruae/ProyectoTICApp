@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorClarito">
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="650dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:background="#ADC2A9">
+
+        <RelativeLayout
+            android:id="@+id/SeccionTituloInfo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorVerdeOscuro">
+
+            <TextView
+                android:id="@+id/TxtInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="50dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="10dp"
+                android:text="Información de Organizador"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SeccClarito"
+            android:layout_width="396dp"
+            android:layout_height="567dp"
+            android:layout_below="@id/SeccionTituloInfo"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="#D3E4CD">
+
+            <RelativeLayout
+                android:layout_width="386dp"
+                android:layout_height="557dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:background="#FEF5ED">
+
+                <TextView
+                    android:id="@+id/textoPrimero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="En OrganizadorApp Puedes Ordenas tus objetivos del día."
+                    android:textSize="20dp"
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:id="@+id/textoSegundo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textoPrimero"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="98dp"
+                    android:paddingLeft="25dp"
+                    android:text="Solo debes hacer lo siguiente:"
+                    android:textSize="20dp"
+                    android:textStyle="italic"></TextView>
+
+                <TextView
+                    android:id="@+id/textoIndicacion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textoSegundo"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:text="1. Agregar un nuevo objetivo y sus respectivos detalles: Nombre del objetivo, descripción y fecha"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/textoIndicacion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textoIndicacion1"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:text="2. Ir a vistas de objetivos"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/textoIndicacion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textoIndicacion2"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:text="3. Seleccionar como desea ver sus objetivos"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/textoIndicacion4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textoIndicacion3"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:text="4. Rellenar el espacio vacio del Checkbox si el objetivo ya está cumplido"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/textoIndicacion5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textoIndicacion4"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:text="5. Listo! Ya sabes usar OrganizadorApp"
+                    android:textSize="15dp"></TextView>
+
+                <Button
+                    android:id="@+id/extrabuttonaggobj"
+                    android:name=".MainActivty"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textoIndicacion5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="63dp"
+                    android:layout_marginEnd="102dp"
+                    android:onClick="onSaveNewButtonClicked"
+                    android:text="Ir a Agregar Nuevo Objetivo"></Button>
+
+                <Button
+                    android:name=".MainActivity"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/extrabuttonaggobj"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="102dp"
+                    android:text="Ir a Vistas Objetivos"
+                    android:onClick="onViewAllButtonClicked"></Button>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

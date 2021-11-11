@@ -21,18 +21,6 @@
             android:textSize="20dp"
             android:textStyle="bold"></TextView>
 
-        <ImageView
-            android:name=".ActivityLogObj"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="354dp"
-            android:layout_marginRight="27dp"
-            android:layout_marginBottom="15dp"
-            android:onClick="setTypeView"
-            android:src="@drawable/returnicon"></ImageView>
 
     </RelativeLayout>
     <RelativeLayout
@@ -41,13 +29,13 @@
         android:layout_below="@+id/SeccListadoObjetivos">
 
         <ListView
-            android:id="@+id/listadoObjetivos"
+            android:id="@+id/ListadoObjetivos"
             android:layout_width="404dp"
             android:layout_height="550dp"
             android:layout_below="@id/SeccListadoObjetivos"
             tools:ignore="MissingConstraints,NotSibling"
             tools:layout_editor_absoluteX="4dp"
-            tools:layout_editor_absoluteY="5dp" />
+            tools:layout_editor_absoluteY="5dp"></ListView>
 
     </RelativeLayout>
 

@@ -70,6 +70,7 @@ public class ActivityList extends AppCompatActivity implements View.OnClickListe
 
     //Guardar informacion
     public void saveOnClick(View view){
+
         String nuevoTitulo = nuevoTituloTexto.getText().toString();
         String nuevaDescrip = nuevaDescripTexto.getText().toString();
         String nuevoDueDate = dateTexto.getText().toString();
@@ -81,12 +82,9 @@ public class ActivityList extends AppCompatActivity implements View.OnClickListe
         intent.putExtra("nuevoObj", nuevoObj);
         Toast.makeText(this,"Nuevo Objetivo guardado!", Toast.LENGTH_SHORT).show();
         startActivity(intent);
+
     }
 
-    // visualizacion de la pantalla para el botón de "Return"
-    public void setTypeView(View view){
-        setContentView(R.layout.activity_type_view);
-    }
 
 
 }
